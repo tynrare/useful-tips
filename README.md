@@ -1,2 +1,2 @@
 # useful-tips
-Tips i collecting
+Tips i collect
