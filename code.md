@@ -16,10 +16,14 @@
 (function (window) {
  "use strict";
 
- function Particle(data) {
-}
-var p = createjs.extend(Particle, createjs.Container);
- window.Particle = createjs.promote(Particle, "Container");
+ function Object(data) {
+ }
+ var p = createjs.extend(Object, createjs.Container);
+ 
+ p.prop = 123; //field
+ var prop2 = 123; //static field
+ 
+ window.Particle = createjs.promote(Object, "Container");
 
 }(window));
 ```
