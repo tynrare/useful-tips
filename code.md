@@ -20,8 +20,8 @@
  }
  var p = createjs.extend(Object, createjs.Container);
  
- p.prop = 123; //field
- var prop2 = 123; //static field
+ p.prop = 123; //public field
+ var prop2 = 123; //static private field
  
  window.Particle = createjs.promote(Object, "Container");
 
