@@ -37,7 +37,7 @@ I use additional TextureRenderer on original texture to avoid artifacts
 	var rt = new PIXI.RenderTexture(brt);
 	var sprite = new PIXI.Sprite(rt);
 	sprite.alpha = 0.7; //has to be half-transparent
- sprite.blendMode = PIXI.BLEND_MODES.ADD;
+ 	sprite.blendMode = PIXI.BLEND_MODES.ADD;
 	stage.addChild(sprite);
 ```
 
