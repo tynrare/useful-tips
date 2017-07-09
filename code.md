@@ -33,12 +33,12 @@
 I use additional TextureRenderer on original texture to avoid artifacts
 
 ```js
-	var brt = new PIXI.BaseRenderTexture(canvas.width, canvas.height, PIXI.SCALE_MODES.LINEAR, 1);
-	var rt = new PIXI.RenderTexture(brt);
-	var sprite = new PIXI.Sprite(rt);
-	sprite.alpha = 0.7; //has to be half-transparent
- 	sprite.blendMode = PIXI.BLEND_MODES.ADD;
-	stage.addChild(sprite);
+var brt = new PIXI.BaseRenderTexture(canvas.width, canvas.height, PIXI.SCALE_MODES.LINEAR, 1);
+var rt = new PIXI.RenderTexture(brt);
+var sprite = new PIXI.Sprite(rt);
+sprite.alpha = 0.7; //has to be half-transparent
+sprite.blendMode = PIXI.BLEND_MODES.ADD;
+stage.addChild(sprite);
 ```
 
 and somewhere in update
