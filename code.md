@@ -47,6 +47,14 @@ and somewhere in update
 Renderer.render(textureToBlend, rt);
 ```
 
+### Why context.drawImage doesn't work in safari
+
+ - Safari doesn't draw image if drawing zone bigger than image
+ 
+ ```js
+ ctx.drawImage(img, 0, 0, 101, 101, ...) // Will fail with 100x100 image
+ ```
+
 ## C/C++
 
 ## VIM
