@@ -2,10 +2,12 @@
 
 ## How to (recursive) kill process in windows by name or UID
 
+ - [Code](https://github.com/Tymonrare/useful-tips/blob/master/code/cpp/win-process-kill.cpp)
+
 i have Qt c++ example for steam games killing, but it can kill any application by name and may easy moved to any engine(Because it uses windows commands mostly). It isn't kill steam itself(because of ignorelist) and has ignore list
 
 ```cpp
-bool Receiver::recursiveKill(int uid){
+bool recursiveKill(int uid){
     bool killed = false;
     {
         QProcess process;
@@ -39,7 +41,7 @@ bool Receiver::recursiveKill(int uid){
     return killed;
 }
 
-bool Receiver::recursiveKill(const QString killprocess){
+bool recursiveKill(const QString killprocess){
     int uid;
     bool parseOk;
     int tmpuid = killprocess.toInt(&parseOk);
@@ -57,7 +59,7 @@ bool Receiver::recursiveKill(const QString killprocess){
     return recursiveKill(uid);
 }
 
-bool Receiver::steamKill(){
+bool steamKill(){
     return recursiveKill("Steam.exe");
 }
 ```
