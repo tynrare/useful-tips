@@ -29,7 +29,7 @@ add_child(load("res://objs/obj.tscn").instance());
 
 ### How to set "editable" variable in godot
 
-- Here's "export" variables, thats sets from editor. This is (official doc)[https://godot.readthedocs.io/en/latest/learning/scripting/gdscript/gdscript_basics.html#exports] and list of hints from there:
+- Here's "export" variables, thats sets from editor. This is [official doc](https://godot.readthedocs.io/en/latest/learning/scripting/gdscript/gdscript_basics.html#exports) and list of hints from there:
 
 ```python
 # If the exported value assigns a constant or constant expression,
