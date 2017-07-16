@@ -105,3 +105,16 @@ export(Color, RGBA) var col  # Color is RGBA
 
 export(NodePath) var node
 ```
+
+### How to create "editor-run" script in godot
+It calls "tool"s. You have to put 
+
+```
+tool
+```
+in top of script and restart editor. Afrer that script will be run also in editor.
+You can use
+```
+get_tree().is_editor_hint()
+```
+to check state of game/editing
