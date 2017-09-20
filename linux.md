@@ -4,7 +4,7 @@
 - Toggle "force composition pipeline" in nvidia-settings
 
 ### How to save nvidia-settings permanently
-- It has to be saved in /usr/share/X11/xorg.conf.d
+- (Manjaro) It has to be saved in /usr/share/X11/xorg.conf.d
 
 ### Working with commands
 - type — Indicate how a command name is interpreted. 
