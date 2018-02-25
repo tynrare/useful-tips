@@ -1,7 +1,6 @@
 /*
 Example for steam games killing, 
 but it can kill any application by name and may easy moved to any engine(Because it uses windows commands mostly). 
-It isn't kill steam itself(because of ignorelist) and has ignore list
 */
 QSrting steamKillIgnore = "steam|htc|nw\.exe|vrmonitor|vrserver|vrdashboard|vrcompositor|vive";
 
