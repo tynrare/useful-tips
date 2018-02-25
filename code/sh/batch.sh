@@ -1,6 +1,6 @@
 #!/bin/bash
-if [[ "$1" = "--help" || "$1" = "-h" ]]; then 
-	echo "usage:
+if [[ "$1" = "--help" || "$1" = "-h" ]]; then
+	echo "Simple imagemagic wrapper. Converts lot images in one spritesheet. Usage:
 		Batch.sh sourcename wtiles htiles wtilesize htilesize resultname
 		sourcename may be regexp like [0-8].png or {name1,name2}.png"
 else
