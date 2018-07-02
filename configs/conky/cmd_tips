@@ -1,0 +1,59 @@
+conky.config = {
+	alignment = 'bottom_left',
+	xinerama_head = 1,
+	background = true,
+	cpu_avg_samples = 2,
+	draw_shades = true,
+	default_shade_color = '003535',
+	color2 = 'BEE599',
+	default_color = '8EBF5F',
+	double_buffer = true,
+	font = 'Bitstream Vera Sans:size=9',
+	minimum_width = 200,
+	no_buffers = true,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_transparent = true,
+	use_xft = true
+}
+conky.text = [[
+${voffset 10}${goto 30}${color}${font Bitstream Vera Sans:bold:size=9}Movement
+${goto 40}$font$color2 ctrl-A $color Move cursor to the beginning of the line.
+${goto 40}$font$color2 ctrl-E $color Move cursor to the end of the line.
+${goto 40}$font$color2 ctrl-F $color Move cursor forward one character;
+${goto 40}$font$color2 ctrl-B $color Move cursor backward one character;
+${goto 40}$font$color2 alt-F $color  Move cursor forward one word.
+${goto 40}$font$color2 alt-B $color  Move cursor backward one word.
+${goto 40}$font$color2 ctrl-L $color Clear the screen.
+#
+${voffset 10}${goto 30}${color}${font Bitstream Vera Sans:bold:size=9}Editing
+${goto 40}$font$color2 ctrl-D $color Delete the character at the cursor location.
+${goto 40}$font$color2 ctrl-T $color Transpose the character at the cursor location with the one preceding it.
+${goto 40}$font$color2 alt-T $color Transpose the word at the cursor location with the one preceding it.
+${goto 40}$font$color2 alt-L $color Convert from the cursor location to the end of the word to lowercase.
+${goto 40}$font$color2 alt-U $color Convert from the cursor location to the end of the word to uppercase.
+${goto 40}$font$color2 ctrl-K $color Kill text from the cursor location to the end of line.
+${goto 40}$font$color2 ctrl-U $color Kill text from the cursor location to the beginning of the line.
+${goto 40}$font$color2 alt-D $color Kill text from the cursor location to the end of the current word.
+${goto 40}$font$color2 alt-b $color Kill text from the cursor location to the beginning of the current word.
+${goto 40}$font$color2 ctrl-Y $color Yank text from the kill-ring and insert it at the cursor location.
+#
+${voffset 10}${goto 30}${color}${font Bitstream Vera Sans:bold:size=9}Completion
+${goto 40}$font$color2 alt-? $color Display list of possible completions.
+${goto 40}$font$color2 alt-* $color Insert all possible completions.
+#
+${voffset 10}${goto 30}${color}${font Bitstream Vera Sans:bold:size=9}History
+${goto 40}$font$color2 ctrl-P $color Move to the previous history entry.
+${goto 40}$font$color2 ctrl-N $color Move to the next history entry.
+${goto 40}$font$color2 alt-< $color Move to the beginning (top) of the history list.
+${goto 40}$font$color2 alt-> $color Move to the end (bottom) of the history list.
+${goto 40}$font$color2 ctrl-R $color Reverse incremental search.
+${goto 40}$font$color2 alt-P $color Reverse search, non-incremental. 
+${goto 40}$font$color2 alt-N $color Forward search, non-incremental.
+${goto 40}$font$color2 ctrl-O $color Execute the current item in the history list.
+
+${goto 40}$font$color2 !! $color Repeat the last command.
+${goto 40}$font$color2 ! number $color Repeat history list item number. 
+${goto 40}$font$color2 ! string $color Repeat last history list item starting with string. 
+${goto 40}$font$color2 !? string $color Repeat last history list item containing string.
+]]

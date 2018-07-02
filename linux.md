@@ -24,7 +24,7 @@
 - ctrl-B Move cursor backward one character; same as the left arrow key.
 - alt-F Move cursor forward one word.
 - alt-B Move cursor backward one word.
-- ctrl-L Clear the screen and
+- ctrl-L Clear the screen and move the cursor to the top left corner. The clear command does the same thing.
 
 ### Editing
 - ctrl-D Delete the character at the cursor location.
@@ -40,7 +40,7 @@
 
 ### Completion
 - alt-? Display list of possible completions. On most systems you can also do this by pressing the tab key a second time, which is much easier.
-- alt-* Insert all possible completions. This is useful when you want to use more than one possible match.
+- alt-\* Insert all possible completions. This is useful when you want to use more than one possible match.
 
 ### History
 - ctrl-P Move to the previous history entry. Same action as the up arrow.
@@ -48,7 +48,8 @@
 - alt-< Move to the beginning (top) of the history list.
 - alt-> Move to the end (bottom) of the history list; i.e., the current command line.
 - ctrl-R Reverse incremental search. Searches incrementally from the current command line up the history list.
-- alt-P Reverse search, non-incremental. With this key, type the search string and press enter before the search is performed. alt -N Forward search, non-incremental.
+- alt-P Reverse search, non-incremental. With this key, type the search string and press enter before the search is performed.
+- alt-N Forward search, non-incremental.
 - ctrl-O Execute the current item in the history list and advance to the next one. This is handy if you are trying to re-execute a sequence of commands in the history list.
 
 - !! Repeat the last command. It is probably easier press the up arrow and enter. 
