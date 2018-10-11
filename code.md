@@ -4,6 +4,16 @@
 ### What isn't "object" in JS
 - Values of type string, number, and Boolean are not objects, and though the language doesn’t complain if you try to set new properties on them, it doesn’t actually store those properties. The values are immutable and cannot be changed. Eloquent *JavaScript, Written by Marijn Haverbeke*
 
+### How to round values
+
+```javascript
+function round(value, decimals) {
+  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+
+round(1.005, 2); // 1.01
+```
+
 ### Была проблема с перерисовкой изображений на css, почему-то спасло: 
 
 ```css
