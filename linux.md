@@ -56,3 +56,9 @@
 - ! number Repeat history list item number. 
 - ! string Repeat last history list item starting with string. 
 - !? string Repeat last history list item containing string .
+
+# Arch
+
+## Packages
+
+- install .deb package - https://unix.stackexchange.com/a/457734
