@@ -1,5 +1,15 @@
 # Engines
 
+## PIXI.JS
+
+### Element position somewhere to local
+
+
+``` javascript
+obj1.position.set(obj1.parent.toLocal(obj2.getGlobalPosition()));
+```
+where obj1 is object you neet to move and obj2 - object you need move to
+
 ## Godot
 
 ### How to dynamic create/clone/instance scene/script file
