@@ -15,6 +15,15 @@
 - whatis — Display a very brief description of a command.
 - alias — Create an alias for a command.
 
+## Input
+
+- wacom tablet area. (according to docs)[https://wiki.archlinux.org/index.php/Wacom_tablet#xrandr_setup]:
+
+```
+$ xsetwacom list devices
+$ xsetwacom set %ID MapToOutput HEAD-0
+```
+
 ## Command line
 
 ### Movement
